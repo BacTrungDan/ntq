@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="navbar__collapse">
+        <div id="navbar__collapse__header">
+            <ul>
+                <li>Dashboard</li>
+                <li>Tax Finalization</li>
+                <li>Calendar</li>
+                <li>Working Timesheet</li>
+                <li>Appraisals</li>
+                <li>Project</li>
+                <li>Timesheets</li>
+                <li>Employees</li>
+                <li>Assets</li>
+                <li>Helpdesk </li>
+                <li>Personal Info</li>
+                <li>More <i class="fa-solid fa-caret-down"></i></li>
+                <div class="right">
+                    <li><i class="fa-solid fa-clock"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-comments"></i></li>
+                    <li><img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/213385736_1367332500334985_2320806764025381794_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=xsbABGJaGLUAX-cvm39&_nc_ht=scontent.fhan3-1.fna&oh=00_AfC9SfkCYQdviiAZicOn-1f_w-5YiqGxE75gfMrhpD1F1A&oe=63A888AA"
+                            alt=""></li>
+                    <li>Bạch Trung Đàn</li>
+                </div>
+            </ul>
+        </div>
+        <div>
+            <marquee behavior="" direction="">bachtrungdan</marquee>
+        </div>
+        <div id="navbar__collapse__left">
+            <div class="navbar__collapse__img">
+                <img style="width: 100%; border-radius: 50%; padding: 36px ; font-size: 10px;"
+                    src="data:image/png;base64,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"
+                    alt="">
+            </div>
+            <div class="navbar__collapse__name">
+                <h4 style="font-size: 17px;margin-top: 12px;">BẠCH TRUNG ĐÀN</h4>
+                <P class="navbar__collapse__text">internship</P>
+                <P class="navbar__collapse__text">intern</P>
+            </div>
+            <div class="navbar__collapse__detail">
+                <div class="navbar__collapse__detail__flex">
+                    <div class="nav__collapse__gender">
+                        <p><i class="fa-solid fa-mars"></i></p>
+                        <p>Nam</p>
+                    </div>
+                    <div class="nav__collapse__birthday">
+                        <p>Sinh nhật</p>
+                        <p>2000/10/01</p>
+                    </div>
+                </div>
+                <div class="nav__collapse__work">
+                    <p>Đã vào làm</p>
+                    <p>1 ngày</p>
+                </div>
+            </div>
+        </div>
+        <div id="navbar__collap__product">
+            <marquee style=" margin-top: 90px;font-size: 20px;font-weight:700;color: #666666;" behavior="" direction="">
+                Xin chào Bạch Trung Đàn, chúc bạn có một ngày làm việc thật vui vẻ và hiệu quả !
+            </marquee>
+
+            <div style="margin-top: 50px;padding: 0px 16px; text-align: center;" id="nav__collapse__right">
+                <div id="nav__collapse__paylist1">
+                    <div class="nav__collapse__paylist1__start__text">CHỜ PHÊ DUYỆT</div>
+                    <button>
+                        <div>Xin nghỉ</div>
+                        <div>0</div>
+                    </button> <br>
+
+                    <button>
+                        <div>Đi về muộn/đi về sớm </div>
+                        <div>0</div>
+                    </button> <br>
+                    <button>
+                        <div>Xin WFH</div>
+                        <div>0</div>
+                    </button> <br>
+                    <button>
+                        <div>Chấm công WFH</div>
+                        <div>0</div>
+                    </button> <br>
+                </div>
+                <div id="nav__collapse__paylist2">
+                    <div class="nav__collapse__paylist1__start__text">VIỆC CẦN LÀM </div>
+                    <button>
+                        <div>Duyệt xin nghỉ</div> <br>
+                        <div>0</div>
+                    </button> <br>
+                    <button>
+                        <div>Duyệt về muộn /về sớm </div>
+                        <div>0</div>
+                    </button> <br>
+                    <button>
+                        <div>Duyệt xin WFH</div>
+                        <div>0</div>
+                    </button> <br>
+                    <button>
+                        <div>Duyệt chấm công WFH</div>
+                        <div>0</div>
+                    </button> <br>
+                    <button>
+                        <div>Đánh giá hợp đồng</div>
+                        <div>0</div>
+                    </button>
+                </div>
+                <div id="nav__collapse__paylist3">
+                    <div class="nav__collapse__paylist1__start__text">THÔNG TIN KHÁC </div>
+                    <button>
+                        <div>Giờ làm</div> <br>
+                        <div><i class="fa-solid fa-angle-right"></i></div>
+                    </button> <br>
+                    <button>
+                        <div>Làm thêm giờ</div>
+                        <div><i class="fa-solid fa-angle-right"></i></div>
+                    </button> <br>
+                    <button>
+                        <div>Chấm công làm thêm giờ</div>
+                        <div><i class="fa-solid fa-angle-right"></i></div>
+                    </button> <br>
+                    <button>
+                        <div>Timesheet gửi khách hàng</div>
+                        <div><i class="fa-solid fa-angle-right"></i></div>
+                    </button> <br>
+                    <button>
+                        <div>Xem phiếu lương</div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button> <br>
+                    <button>
+                        <div>Ủy quyền quyết toán thuế</div>
+                        <div><i class="fa-solid fa-angle-right"></i></div>
+                    </button>
+                </div>
+                <div id="nav__collapse__paylist4">
+                    <div class="nav__collapse__paylist1__start__text__date">ĐIỂM DANH </div>
+                    <div id="nav__coolapse__paylist1__scoll">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Ngày</th>
+                                    <th>Giờ vào</th>
+                                    <th>Giờ về</th>
+                                </tr>
+                                <tr>
+                                    <td> 22-12-2022</td>
+                                    <td>8h29</td>
+                                    <td>18h31 </td>
+                                </tr>
+                                <tr>
+                                    <td> 22-12-2022</td>
+                                    <td>8h29</td>
+                                    <td>18h31 </td>
+                                </tr>
+                                <tr>
+                                    <td> 22-12-2022</td>
+                                    <td>8h29</td>
+                                    <td>18h31 </td>
+                                </tr>
+                                <tr>
+                                    <td> 22-12-2022</td>
+                                    <td>8h29</td>
+                                    <td>18h31 </td>
+                                </tr>
+                                <tr>
+                                    <td> 22-12-2022</td>
+                                    <td>8h29</td>
+                                    <td>18h31 </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+    
+            <div style="margin-left:300px;">
+                <div style="display: flex;margin-top: 700px;" class="nav__card">
+                    <div class="nav__card1">
+                        <div class="nav__card1__text">NGHỈ PHÉP</div>
+                        <div class="nav__card1__table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Loại nghỉ</th>
+                                        <th>Đã dùng</th>
+                                        <th>Còn lại </th>
+                                    </tr>
+                                    <tr>
+                                        <td>Nghỉ không lương</td>
+                                        <td>0</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Nghỉ vì việc gia <br>
+                                            đình(Bố,mẹ, <br> vợ,chồng mất)
+                                        </td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nghỉ cưới</td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nghỉ bù OT</td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="nav__card2">
+                        <div class="nav__card2__text">LỊCH HỌP HÔM NAY</div>
+                        <div>
+                            <p>Bạn không có lịch họp hôm nay <br>
+                                Ấn "+" để tạo lịch họp
+                            </p>
+                            <button>+</button>
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="nav__card3">
+                        <div class="nav__card3__text">SINH NHẬT THÀNH VIÊN </div>
+                        <div class="nav__card3__list">
+                            <div >
+                                <ul style="display: flex;list-style: none;">
+                                    <li>
+                                        <img class="nav__card3__img" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/213385736_1367332500334985_2320806764025381794_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=xsbABGJaGLUAX-cvm39&_nc_ht=scontent.fhan3-1.fna&oh=00_AfC9SfkCYQdviiAZicOn-1f_w-5YiqGxE75gfMrhpD1F1A&oe=63A888AA"
+                                        alt="">
+                                    </li>
+                                    <li>
+                                        <h2 style="font-size: 13px;">Bạch Trung Đàn</h2>
+                                        <p style="font-size: 13px;" >React</p>
+                                        <p style="font-size: 13px;">10/01</p>
+                                    </li>
+                                </ul>
+
+                                <ul style="display: flex;list-style: none;">
+                                    <li>
+                                        <img class="nav__card3__img" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-6/213385736_1367332500334985_2320806764025381794_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=xsbABGJaGLUAX-cvm39&_nc_ht=scontent.fhan3-1.fna&oh=00_AfC9SfkCYQdviiAZicOn-1f_w-5YiqGxE75gfMrhpD1F1A&oe=63A888AA"
+                                        alt="">
+                                    </li>
+                                    <li>
+                                        <h2 style="font-size: 13px;">Bạch Trung Đàn</h2>
+                                        <p style="font-size: 13px;" >React</p>
+                                        <p style="font-size: 13px;">10/01</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

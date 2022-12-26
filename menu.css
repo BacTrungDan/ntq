@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+#navbar__collap__product{
+    background: #f7f9fe;
+}
+#navbar__collapse__left {
+    width: 100%;
+    margin-top: 64px;
+    position: fixed;
+}
+
+.navbar__collapse__name {
+    text-align: center;
+}
+
+#navbar__collapse__header {
+    background: #f9f9f9;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #c6c6c6;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar__collapse__header ul {
+    color: rgba(255, 255, 255, 0.418);
+    list-style: none;
+    display: flex;
+    background-color: black;
+    font-size: 13px;
+}
+
+#navbar__collapse__header ul li {
+    padding: 10px;
+}
+
+#navbar__collapse__header ul li:hover {
+    color: whitesmoke;
+}
+
+#navbar__collapse__header ul img {
+    width: 20px;
+    border-radius: 50%;
+
+}
+
+#navbar__collapse__left {
+    width: 230px;
+    background: #3e6282;
+    padding-right: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar__collapse__name {
+    background: #466b8d;
+    width: 230px;
+    padding: 5px;
+}
+
+.navbar__collapse__name p {
+    font-size: 12px;
+}
+
+.navbar__collapse__detail__flex {
+    display: flex;
+    font-size: 13px;
+    text-align: center;
+}
+
+.navbar__collapse__detail__flex div {
+    padding: 30px;
+    background: #3e6282;
+}
+
+#nav__collapse__right {
+    display: flex;
+    margin-top: 50px;
+    width: 80%;
+    float: right;
+}
+
+.nav__collapse__work {
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 50px;
+}
+
+#nav__collapse__paylist1 {
+    background: #de889d;
+    border-radius: 20px;
+    width: 25%;
+    text-align: center;
+    height:max-content;
+    padding-bottom: 5px;
+}
+
+#nav__collapse__paylist1:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    transform: translateY(-2px);
+    transition: 1ms;
+}
+
+#nav__collapse__paylist1 button {
+    padding: 22px 12px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    border-radius: 7px;
+    font-weight: 700;
+    color: #4C4C4C;
+    margin: auto;
+    box-shadow: 0px 4px 4px #9b9b91
+}
+
+.nav__collapse__paylist1__start__text {
+    font-family: "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
+    padding: 12px 0px;
+    color: white;
+    font-size: 16px;
+}
+
+#nav__collapse__paylist2 {
+    background: #d9a883;
+    width: 25%;
+    margin: 0px 20px;
+    border-radius: 20px;
+    text-align: center;
+    height:max-content;
+    padding-bottom: 10px;
+}
+
+#nav__collapse__paylist2:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    transform: translateY(-2px);
+    transition: 1ms;
+}
+
+#nav__collapse__paylist2 button {
+    padding: 22px 12px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #4C4C4C;
+    margin: auto;
+    box-shadow: 0px 4px 4px #9b9b91
+}
+
+#nav__collapse__paylist2 button div {
+    margin: 0px 10px;
+}
+
+#nav__collapse__paylist3 {
+    background: rgb(181 147 233);
+    width: 25%;
+    margin: 0px 20px;
+    border-radius: 20px;
+    text-align: center;
+    height:max-content;
+    padding-bottom: 10px;
+}
+
+#nav__collapse__paylist3:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    transform: translateY(-3px);
+    position: relative;
+}
+
+#nav__collapse__paylist3 button {
+    padding: 12px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    border-radius: 7px;
+    font-size: 13px;
+    margin: auto;
+    box-shadow: 0px 4px 4px #9b9b91;
+}
+
+#nav__collapse__paylist3 button div {
+    margin: 0px 10px;
+}
+
+#nav__collapse__paylist4 {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.nav__collapse__paylist1__start__text__date {
+    background: #5f9ea0;
+    color: white;
+}
+
+.right {
+    display: flex;
+    margin-left: 8%;
+}
+
+#nav__collapse__paylist4 {
+    text-align: center;
+    overflow-y: auto;
+    background: #ffffff;
+    height: 300px;
+}
+
+.nav__collapse__paylist1__start__text__date {
+    padding: 12px 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#nav__collapse__paylist4 tr {
+    border: 1px solid black;
+}
+
+#nav__collapse__paylist4 tr{
+    justify-content: space-between;
+}
+#nav__collapse__paylist4 th{
+    border: 1px solid #ddd;
+    text-align: center;
+    font-family: "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
+    height: 33px;
+    font-size: 15px;
+    background: #e6f3f3;
+    color: #4c4c4c; 
+}
+#nav__collapse__paylist4 td {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+}
+.nav__card1{
+    width: 30%;
+    background: #ffffff;
+    
+/* text-align: center; */
+}
+.nav__card1__text{
+    background: #AECDF9;
+    text-align: center;
+    font-size: 17px;
+    padding: 12px 0;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+.nav__card1__table th{
+    width: 33%;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-family: "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
+    height: 33px;
+    width: 100%;
+    font-size: 15px;
+    background: #e6f3f3;
+    color: #4c4c4c; 
+}
+.nav__card1__table td{
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.nav__card2{
+    width: 30%;
+    text-align: center;
+    margin: 0px 40px;
+    background: #ffffff;
+}
+.nav__card2__text{
+    font-size: 17px;
+    padding: 12px 0;
+    background: #87ceeb;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.nav__card2 button{
+ padding:5px  10px;
+ font-size: 40px;
+ background: #f0f8ff;
+}
+
+.nav__card3{
+    width: 30%;
+    background: #ffffff;
+}
+.nav__card3__text{
+    background: #AFDBA9;
+    font-size: 17px;
+     padding: 12px 0;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.nav__card3__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0px 10px;
+}
